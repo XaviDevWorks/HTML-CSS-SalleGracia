@@ -1,0 +1,39 @@
+h1{
+
+    text-align:center;
+}
+
+h2{
+
+    color: blue;
+}
+
+p{
+    color: black;
+}
+
+.not-blue h2{
+
+    color: yellow;
+}
+.not-blue p{
+
+    color: green;
+}
+a:link{
+
+ color: aqua;
+}
+a:visited{
+
+    color: brown;
+
+}
+a:active{
+
+    color: coral;
+}
+a:hover{
+
+    color: black;
+}

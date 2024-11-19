@@ -1,0 +1,64 @@
+:root {
+    --fondo-header: rgb(84,120,193);
+    --color-header: white; 
+    --fondo-footer: rgb(84,120,193);
+    --color-footer: white;
+
+
+
+  }
+
+
+html{
+
+    font-family: "Roboto", consolas, sans-serif
+
+}
+
+p{
+
+    font-size: 1.1rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+header{
+
+    background-color: var(--fondo-header);
+    
+    color: var(--color-header);
+
+}
+footer{
+
+    background-color:var(--fondo-footer);
+    color:var(var(--color-footer));
+
+}
+section{
+
+    background-color:  rgba(210,223,251, 0.8);
+    color: rgb(73,105,169);
+
+}
+
+a:visited{
+
+    color: black;
+}
+.fondo:hover{
+
+    color: white;
+    background-color: rgb(10,15,24);
+
+}
+
+span{
+
+    font-style: italic;
+}
+
+footer p{
+    font-style: italic;
+}
