@@ -1,0 +1,182 @@
+<!-- Block & Inline Elements
+HTML Containers:
+<div>
+<span>
+Attributs: Ids & Classes
+HTML5 Tags:
+<header> ✓
+<nav> ✓
+<main> ✓
+<section> ✓
+<article> ✓
+<aside>✓
+<footer>✓
+   -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Exercise</title>
+  <style>
+    :root {
+      --bg-dark-color: rgb(58, 66, 73);
+      --bg-dark-text-color: white;
+    }
+
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding: 0 1rem;
+      list-style: none;
+    }
+
+    .card {
+      border: 1px solid rgb(230, 230, 230);
+      background: rgb(241, 241, 241);
+      padding: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .text-center {
+      display: block;
+      text-align: center;
+    }
+
+    #header {
+      background-color: var(--bg-dark-color);
+      color: var(--bg-dark-text-color);
+      padding: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    #wrapper {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-column-gap: 1rem;
+    }
+
+    #main {
+      grid-column: 1 / span 2;
+    }
+
+    #footer {
+      background-color: var(--bg-dark-color);
+      color: var(--bg-dark-text-color);
+      padding: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+
+
+  <header id="header">
+    <h1>My Website</h1>
+    <p>This is an example website</p>
+
+
+  </header>
+
+
+  <aside id="wrapper">
+    <!-- Main Content (left) -->
+
+    <main id="main">
+      <!-- Welcome Section -->
+      <section>
+        <div id="welcome" class="card">
+          <header>
+            <h2>Welcome!</h2>
+            <h3>subtiitulo</h3>
+          </header>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore ut assumenda quasi sunt. Provident
+            iure quas asperiores maxime eaque minus officiis inventore repellendus quae neque, perferendis ea, libero
+            exercitationem labore necessitatibus sapiente porro odio incidunt minima eveniet qui debitis temporibus!
+          </p>
+          <details class="text-center">
+            <summary>Click For More</summary>
+            <p>Assumenda nostrum eos quo eveniet aliquam consequuntur, eaque vero reiciendis ducimus exercitationem
+              asperiores ipsa hic ab corrupti, cupiditate explicabo culpa rerum. Dicta aliquid harum tempore hic
+              debitis, aspernatur aut fuga accusantium deserunt asperiores ab? Provident amet nisi modi magni minus
+              animi sint aliquam esse eius, a ullam nostrum aut voluptatum quisquam blanditiis? Ducimus obcaecati
+              ipsum
+              vel accusantium necessitatibus adipisci ullam.
+            </p>
+          </details>
+        </div>
+      </section>
+      <!-- Blog Section -->
+
+      <section id="blog">
+        <h2>My Blog</h2>
+        <!-- Article One -->
+
+        <article class="article">
+
+          <h3>Article One</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ea corporis quisquam natus. Id, culpa
+            facere nisi iste architecto doloribus asperiores sint distinctio similique cum?
+          </p>
+        </article>
+
+
+        <!-- Article Two -->
+
+        <article class="article">
+          <h3>Article Two</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae deserunt blanditiis impedit autem
+            aliquam hic ullam, ratione dicta? Reiciendis magni velit reprehenderit minima, nesciunt repellendus!
+          </p>
+        </article>
+
+      </section>
+    </main>
+    </main>
+
+    <!-- Sidebar (right) -->
+    <aside id="sidebar" class="card">
+      <nav>
+        <h3>Navigation</h3>
+        <ul id="nav"></ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+
+
+      <hr />
+      <h3>Contact Us</h3>
+      <ul>
+        <li><strong>Address:</strong> C/ False 123</li>
+        <li><strong>Phone:</strong> 666 66 66 66</li>
+        <li><strong>Email:</strong> fake@fakeweb.com</li>
+      </ul>
+    </aside>
+  </aside>
+
+  <!-- Footer -->
+  <section>
+    <footer id="footer">
+      <p class="text-center">Copyright &copy; My Website (year)</p>
+    </footer>
+  </section>
+</body>
+
+</html>
