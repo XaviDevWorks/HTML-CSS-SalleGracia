@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box; /* el border-box hace que cuando digas cual es el ancho de tu div (en este caso hemos puesto 100px), no tienes que recalcular los pixeles del padding, lo hace solo y hace que el tamaño se mantenga siempre en 100px*/
+}
+
+h1{
+    color: red;
+}
+body{
+
+    background: #7b4397;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border: 5px solid rgb(53, 223, 214);
+}
+
+.ejemplo-box{ /* las reglas de css hacen que si pones varias ordenes de la misma cosa, solo se mantiene la ultima*/
+    display: inline-block;
+    background-color: aquamarine;
+    color: white;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px ;
+    padding: 50px 100px;  /* 50px arriba y abajo, 100 derecha e izquierda  */
+    padding: 10px, 40px, 70px, 30px;
+    margin: 40px;
+
+border: 1px solid black;
+width: 500px;
+height: 500px;
+
+border-top: 15px dashed yellowgreen;
+border-bottom: 15px dashed yellowgreen;
+border-right:15px dashed red;
+border-left: 15px dashed red;
+border-top-style: solid;
+border-radius: 30px 0 30px 0;
+box-shadow: 10px 100px 10px 10px black;
+
+background-image: url('https://media1.tenor.com/m/8nS_WS_OhGUAAAAd/sus-noam10.gif'); /* URL del GIF alojado externamente */
+background-size: cover; /* Asegura que el GIF cubra todo el div */
+background-repeat: repeat; /* Evita que el GIF se repita */
+background-position: center; /* Centra el GIF */
+
+}
+
+.ejemplo-box > span {
+
+color: yellow;
+}
+
+.ejemplo-box1{
+
+    display: inline-block;
+    background-color: aquamarine;
+    color: white;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px ;
+    padding: 50px 100px;  /* 50px arriba y abajo, 100 derecha e izquierda  */
+    padding: 10px, 40px, 70px, 30px;
+    margin: 40px;
+
+border: 1px solid black;
+width: 500px;
+height: 500px;
+
+border-top: 15px dashed yellowgreen;
+border-bottom: 15px  yellowgreen;
+border-right:15px dashed red;
+border-left: 15px dashed red;
+border-top-style: solid;
+border-radius: 30px 0 30px 0;
+box-shadow: 10px 100px 10px 10px black;
+
+background-image: url('https://media1.tenor.com/m/UZb0Zsw3584AAAAC/vegeta-phone-smile-reverse.gif'); /* URL del GIF alojado externamente */
+background-size: cover; /* Asegura que el GIF cubra todo el div */
+background-repeat: repeat; /* Evita que el GIF se repita */
+background-position: center; /* Centra el GIF */
+}
